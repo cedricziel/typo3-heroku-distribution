@@ -9,6 +9,8 @@ can be run on Heroku using the current cedar stack.
 2. login through ``heroku login``
 3. create heroku app with ``heroku create``. This registers git remote ``heroku``
 4. push to heroku ``git push heroku master``
+5. open in browser and complete setup with ``heroku open``
+   make sure to delete ``web/FIRST_INSTALL`` afterwards
 
 ## Tips
 
