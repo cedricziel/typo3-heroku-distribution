@@ -4,9 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c8bbff19dacddd2a12ad38274458314",
-    "content-hash": "5f2e181a8735ceff8fd171d4709d1a49",
+    "hash": "74185cf2e7be66263182871efc316309",
+    "content-hash": "6481291302fa29b2c47651a337dfae00",
     "packages": [
+        {
+            "name": "cedricziel/typo3-cloudoconfiguration",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cedricziel/typo3-cloudoconfiguration.git",
+                "reference": "8635f29a8b40b3db75f20532576c1f4e6927c9d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cedricziel/typo3-cloudoconfiguration/zipball/8635f29a8b40b3db75f20532576c1f4e6927c9d5",
+                "reference": "8635f29a8b40b3db75f20532576c1f4e6927c9d5",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "1.17.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CedricZiel\\TYPO3\\CloudoConfiguration\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cedric Ziel",
+                    "email": "cedric@cedric-ziel.com"
+                }
+            ],
+            "description": "Generates Autoconfiguration from environment variables",
+            "time": "2015-09-24 20:36:57"
+        },
         {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
@@ -166,6 +202,126 @@
                 "composer"
             ],
             "time": "2015-08-10 20:58:34"
+        },
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v76",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "5a770b914549cf2a897cbbaf379eb5adf410d464"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/5a770b914549cf2a897cbbaf379eb5adf410d464",
+                "reference": "5a770b914549cf2a897cbbaf379eb5adf410d464",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-hhvm-apache2",
+                "bin/heroku-hhvm-nginx",
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+            "homepage": "http://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "hhvm",
+                "nginx",
+                "php"
+            ],
+            "time": "2015-09-08 13:40:29"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "raven/raven": "~0.11",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "swiftmailer/swiftmailer": "~5.3",
+                "videlalvaro/php-amqplib": "~2.4"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.16.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2015-08-31 09:17:37"
         },
         {
             "name": "pear/http_request2",
@@ -637,12 +793,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "32b09d17f8e9d4e1e4f4bab81a7ae3fc97d56b5d"
+                "reference": "0c60eeb74576c76ffe8729f625f3281827ff45fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/32b09d17f8e9d4e1e4f4bab81a7ae3fc97d56b5d",
-                "reference": "32b09d17f8e9d4e1e4f4bab81a7ae3fc97d56b5d",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/524ca1c78fae0b719459c6bdf019f859983b9962",
+                "reference": "0c60eeb74576c76ffe8729f625f3281827ff45fa",
                 "shasum": ""
             },
             "require": {
@@ -831,7 +987,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-09-24 10:13:57"
+            "time": "2015-09-24 16:27:18"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -945,7 +1101,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "typo3/cms": 20
+        "typo3/cms": 20,
+        "cedricziel/typo3-cloudoconfiguration": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

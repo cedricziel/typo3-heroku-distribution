@@ -12,8 +12,10 @@
     "ext-zip": "*",
     "ext-zlib": "*",
     "ext-openssl": "*",
-    "typo3/cms": "7.x-dev",
-    "vlucas/phpdotenv": "^2.0"
+    "typo3/cms": "dev-master#0c60eeb74576c76ffe8729f625f3281827ff45fa",
+    "vlucas/phpdotenv": "^2.0",
+    "cedricziel/typo3-cloudoconfiguration": "dev-master",
+    "heroku/heroku-buildpack-php": "^76.0"
   },
   "extra": {
     "typo3/cms": {
@@ -27,5 +29,16 @@
       "name": "Cedric Ziel",
       "email": "cedric@cedric-ziel.com"
     }
-  ]
+  ],
+  "scripts": {
+    "post-install-cmd": [
+      "CedricZiel\\TYPO3\\CloudoConfiguration\\InstallHooks::writeAutoConfiguration"
+    ],
+    "post-update-cmd": [
+      "CedricZiel\\TYPO3\\CloudoConfiguration\\InstallHooks::writeAutoConfiguration"
+    ],
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ]
+  }
 }
