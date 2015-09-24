@@ -21,3 +21,5 @@ you need to adjust values. Placing it there has [no performance penalty](https:/
 
 1. run ``composer update`` only with the ``--prefer-dist`` flag as currently 
    it would download the whole TYPO3 repository
+2. accessing the install tool is only possible when the ENABLE_INSTALL_TOOL
+   marker file is present
