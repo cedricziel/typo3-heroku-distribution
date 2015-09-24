@@ -11,6 +11,11 @@ can be run on Heroku using the current cedar stack.
 4. push to heroku ``git push heroku master``
 5. open in browser and complete setup with ``heroku open``
    make sure to delete ``web/FIRST_INSTALL`` afterwards
+   
+## Customization
+
+php.ini values will be picked up from a ``.user.ini`` file in ``web``. Go there if 
+you need to adjust values. Placing it there has [no performance penalty](https://devcenter.heroku.com/articles/custom-php-settings#user-ini-files-recommended).
 
 ## Tips
 
