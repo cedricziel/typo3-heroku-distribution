@@ -9,3 +9,8 @@ can be run on Heroku using the current cedar stack.
 2. login through ``heroku login``
 3. create heroku app with ``heroku create``. This registers git remote ``heroku``
 4. push to heroku ``git push heroku master``
+
+## Tips
+
+1. run ``composer update`` only with the ``--prefer-dist`` flag as currently 
+   it would download the whole TYPO3 repository
