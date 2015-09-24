@@ -5,6 +5,9 @@
       "url": "http://composer.typo3.org/"
     }
   ],
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "^76.0"
+  },
   "require": {
     "ext-gd": "*",
     "ext-mysqli": "*",
@@ -14,8 +17,7 @@
     "ext-openssl": "*",
     "typo3/cms": "dev-master#0c60eeb74576c76ffe8729f625f3281827ff45fa",
     "vlucas/phpdotenv": "^2.0",
-    "cedricziel/typo3-cloudoconfiguration": "dev-master",
-    "heroku/heroku-buildpack-php": "^76.0"
+    "cedricziel/typo3-cloudoconfiguration": "dev-master"
   },
   "extra": {
     "typo3/cms": {

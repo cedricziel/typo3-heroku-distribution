@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "74185cf2e7be66263182871efc316309",
-    "content-hash": "6481291302fa29b2c47651a337dfae00",
+    "hash": "8d86515c01809ff0615e986c452fcf51",
+    "content-hash": "ec6e0ba491e94c20e30d88f9168c20a9",
     "packages": [
         {
             "name": "cedricziel/typo3-cloudoconfiguration",
@@ -13,16 +13,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cedricziel/typo3-cloudoconfiguration.git",
-                "reference": "8635f29a8b40b3db75f20532576c1f4e6927c9d5"
+                "reference": "6e3795a10a9103218f6f5c9925d1152cc992a7f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cedricziel/typo3-cloudoconfiguration/zipball/8635f29a8b40b3db75f20532576c1f4e6927c9d5",
-                "reference": "8635f29a8b40b3db75f20532576c1f4e6927c9d5",
+                "url": "https://api.github.com/repos/cedricziel/typo3-cloudoconfiguration/zipball/6e3795a10a9103218f6f5c9925d1152cc992a7f2",
+                "reference": "6e3795a10a9103218f6f5c9925d1152cc992a7f2",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "1.17.1"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.0-alpha10"
             },
             "type": "library",
             "autoload": {
@@ -41,7 +44,7 @@
                 }
             ],
             "description": "Generates Autoconfiguration from environment variables",
-            "time": "2015-09-24 20:36:57"
+            "time": "2015-09-24 22:57:24"
         },
         {
             "name": "cogpowered/finediff",
@@ -202,50 +205,6 @@
                 "composer"
             ],
             "time": "2015-08-10 20:58:34"
-        },
-        {
-            "name": "heroku/heroku-buildpack-php",
-            "version": "v76",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "5a770b914549cf2a897cbbaf379eb5adf410d464"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/5a770b914549cf2a897cbbaf379eb5adf410d464",
-                "reference": "5a770b914549cf2a897cbbaf379eb5adf410d464",
-                "shasum": ""
-            },
-            "bin": [
-                "bin/heroku-hhvm-apache2",
-                "bin/heroku-hhvm-nginx",
-                "bin/heroku-php-apache2",
-                "bin/heroku-php-nginx"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Zuelke",
-                    "email": "dz@heroku.com"
-                }
-            ],
-            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-            "homepage": "http://github.com/heroku/heroku-buildpack-php",
-            "keywords": [
-                "apache",
-                "apache2",
-                "foreman",
-                "heroku",
-                "hhvm",
-                "nginx",
-                "php"
-            ],
-            "time": "2015-09-08 13:40:29"
         },
         {
             "name": "monolog/monolog",
@@ -1097,7 +1056,52 @@
             "time": "2015-05-30 16:15:01"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v76",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "5a770b914549cf2a897cbbaf379eb5adf410d464"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/5a770b914549cf2a897cbbaf379eb5adf410d464",
+                "reference": "5a770b914549cf2a897cbbaf379eb5adf410d464",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-hhvm-apache2",
+                "bin/heroku-hhvm-nginx",
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+            "homepage": "http://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "hhvm",
+                "nginx",
+                "php"
+            ],
+            "time": "2015-09-08 13:40:29"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
