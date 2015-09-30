@@ -17,6 +17,18 @@ can be run on Heroku using the current cedar stack.
 php.ini values will be picked up from a ``.user.ini`` file in ``web``. Go there if 
 you need to adjust values. Placing it there has [no performance penalty](https://devcenter.heroku.com/articles/custom-php-settings#user-ini-files-recommended).
 
+## Installing extensions
+
+Due to the immutable file system (it gets resetted on every push) and the way
+TYPO3 determines the extensions it should load, a special "flow" for enabling
+an extension is needed.
+
+1. require the extension with composer
+2. push the app, install it via the extension manager
+3. manually activate the package in ``typo3conf/PackageStates.php``
+
+This flow is needed to keep the various mechanisms in sync after push.
+
 ## Tips
 
 1. run ``composer update`` only with the ``--prefer-dist`` flag as currently 
