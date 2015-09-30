@@ -1,3 +1,6 @@
+# Exclude env configuration
+.env
+
 # Created by .ignore support plugin (hsz.mobi)
 
 ### Composer template
