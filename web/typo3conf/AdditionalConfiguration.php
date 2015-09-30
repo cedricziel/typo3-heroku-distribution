@@ -3,7 +3,7 @@
  * Loads the environment from the .env file in the root
  * directory
  */
-$dotenv = new Dotenv\Dotenv('/app/web');
+$dotenv = new Dotenv\Dotenv('/app');
 $dotenv->load();
 
 /**
