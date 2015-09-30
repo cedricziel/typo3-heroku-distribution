@@ -15,7 +15,7 @@
     "ext-zip": "*",
     "ext-zlib": "*",
     "ext-openssl": "*",
-    "typo3/cms": "dev-master#0c60eeb74576c76ffe8729f625f3281827ff45fa",
+    "typo3/cms": "7.5.0",
     "vlucas/phpdotenv": "^2.0",
     "cedricziel/typo3-cloudoconfiguration": "dev-master"
   },
@@ -34,9 +34,11 @@
   ],
   "scripts": {
     "post-install-cmd": [
+      "php -r \" if (!file_exists('.env')) copy('.env.example', '.env');\"",
       "CedricZiel\\TYPO3\\CloudoConfiguration\\InstallHooks::writeAutoConfiguration"
     ],
     "post-update-cmd": [
+      "php -r \" if (!file_exists('.env')) copy('.env.example', '.env');\"",
       "CedricZiel\\TYPO3\\CloudoConfiguration\\InstallHooks::writeAutoConfiguration"
     ],
     "post-root-package-install": [
