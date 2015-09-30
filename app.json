@@ -1,0 +1,9 @@
+{
+  "name": "TYPO3 CMS 7.5",
+  "description": "An example app.json for heroku-docker",
+  "image": "heroku/php",
+  "repository": "https://github.com/cedricziel/typo3-heroku-distribution.git",
+  "addons": [
+    "cleardb"
+  ]
+}

@@ -3,6 +3,9 @@
 This is a work-in-progress to research how TYPO3 CMS
 can be run on Heroku using the current cedar stack.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/cedricziel/typo3-heroku-distribution)
+
+
 ## Initialization
 
 1. install heroku cli
